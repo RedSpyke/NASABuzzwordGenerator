@@ -35,15 +35,6 @@ public class Main {
                     generateBuzzWords();
                     break;
                 case 2:
-                    addWord();
-                    break;
-                case 3:
-                    removeWord();
-                    break;
-                case 4:
-                    printWords();
-                    break;
-                case 5:
                     closeProgram = true;
                     break;
                 default:
@@ -51,7 +42,6 @@ public class Main {
                     break;
             }
         }
-
     }
 
     public static void printInstructions() {
@@ -59,43 +49,13 @@ public class Main {
         System.out.println(" Press: ");
         System.out.println("\t 0 - To print choice options.");
         System.out.println("\t 1 - Generate buzz words ");
-        System.out.println("\t 2 - Add a word to a column.");
-        System.out.println("\t 3 - Remove a word from a column");
-        System.out.println("\t 4 - Print all words from the columns");
-        System.out.println("\t 5 - Exit application. ");
+        System.out.println("\t 2 - Exit application. ");
     }
-
     public static void generateBuzzWords() {
         System.out.println("Buzz words: " + column1[rand.nextInt(column1.length)] + ' '
                 + column2[rand.nextInt(column2.length)] + ' '
                 + column3[rand.nextInt(column3.length)]);
     }
 
-    public static void addWord() {
-
-    }
-
-    public static void removeWord() {
-
-    }
-
-    public static void printWords() {
-        System.out.print("Column 1 words: ");
-        for (int i = 0; i < column1.length; i++) {
-            System.out.print(column1[i] + ' ');
-        }
-        System.out.println();
-        System.out.print("Column 2 words: ");
-        for (int i = 0; i < column2.length; i++) {
-            System.out.print(column2[i] + ' ');
-        }
-        System.out.println();
-        System.out.print("Column 3 words: ");
-        for (int i = 0; i < column3.length; i++) {
-            System.out.print(column3[i] + ' ');
-        }
-        System.out.println();
-    }
-
-
 }
+
